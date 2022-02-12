@@ -1,0 +1,290 @@
+*{
+    box-sizing: border-box;
+}
+
+body , html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+ul , li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2, h3, p{
+    margin: 0;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* section preview */
+
+.preview{
+    background: url(./desk-header\ 1.png) center no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.link{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #FFFFFF;
+}
+
+.link-border{
+    border: 2px solid #FFFFFF;
+    padding: 7px 15px;
+
+    border-radius: 20px;
+    margin-left: 15px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 125px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+}
+.preview-content{
+    text-align: center;
+}
+
+.preview-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 63px;
+    text-transform: uppercase;
+    width: 508px;
+    
+    color: #FFFFFF;
+
+    margin-bottom: 36px;
+    margin: 0 auto;
+}
+
+.preview-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #FFFFFF;
+
+    margin-bottom: 33px;
+}
+
+.button{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;  
+    
+    background: #FF4E50;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 23px;
+    cursor: pointer;
+}
+
+/* section team */
+
+.team{
+    padding: 64px 0 72px 0;
+}
+
+.team-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #333333;    
+
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.button-border{
+    background: #FFFFFF;
+    border: 2px solid #FF4E50;
+    box-sizing: border-box;
+
+    color: #FF4E50;
+    width: 195px;
+    height: 43px;
+}
+
+.team-avatar{
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.team-avatar-icon{
+    display: inline-block;
+    background: #FF4E50;
+    border: 4px solid #FFFFFF;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-item{
+    text-align: center;
+    margin-right: 30px;
+}
+
+.team-item:last-child{
+    margin-right: 0;
+}
+
+.shape{
+    /* position: absolute;
+    right: -3px;
+    left: -3px; */
+
+    padding: 1px 3px 1px 4px;
+}
+
+.green{
+    background: #1CD7AD;
+}
+
+.yellow{
+    background: #FFA507;
+    padding-top: 2px;
+}
+
+.blue{
+    background: #4E73DB;
+    padding-top: 2px;
+}
+
+.team-name{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+   
+    color: #333333;
+
+    margin-bottom: 17px;
+}
+
+.team-info{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14.0112px;
+    line-height: 16px;
+    
+    color: #666666;
+
+    max-width: 240px;
+}
+
+.team-button{
+    text-align: center;
+    margin-top: 36px;
+}
+
+@media screen and (max-width:768px){
+    .team-list{
+        flex-wrap: wrap;
+        margin-bottom: -64px;
+    }
+
+    .team-item{
+        width: 47%;
+        margin-bottom: 64px;
+    }
+
+    .team-item:nth-child(2){
+        margin-right: 0;
+    }
+
+    .team-info{
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:520px){
+   .team-item{
+       width: 100%;
+       margin-right: 0;
+   }
+}
+
+@media screen and (max-width:480px){
+    .preview-title{
+        font-size: 30px;
+        margin-bottom: 12px;
+        line-height: 37px;
+    }
+
+    .preview-text{
+        font-size: 18px;
+        margin-bottom: 17px;
+    }
+
+    .header{
+        flex-direction: column-reverse;
+        margin-bottom: 22px;
+    }
+
+    .logo{
+        margin-top: 112px;
+    }
+
+    .team{
+        padding: 63px 0 57px 0;
+    }
+
+    .team-list{
+        margin-bottom: -31px;
+    }
+
+    .team-item{
+        margin-bottom: 31px;
+    }
+}
